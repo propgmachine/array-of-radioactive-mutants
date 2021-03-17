@@ -2,6 +2,42 @@
  * YOUR CODE HERE *
  ******************/
 
+function addMeToEnd(array) {
+  array.push('Colin');  
+}
+
+function addMeToStart(array) {
+  array.unshift('Colin');
+}
+
+function changeLast(array, value) {
+  array[array.length - 1] = value;
+}
+
+function changeAllValuesTo(array, value) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = value;
+  }
+}
+
+function oddOrEven(array) {
+  for (let i = 0; i < array.length; i++) {
+
+    if (array[i] % 2 === 1) {
+      array[i] = 'odd';  
+    }
+
+    else {
+      array[i] = 'even';
+    }
+  }    
+}
+
+function changeNextThreeToValue(index, array, value) {
+  for (let i = index; i < index + 3; i++) {
+    array[i] = value;
+  }
+}
 
 
 
